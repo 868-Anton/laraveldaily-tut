@@ -34,7 +34,7 @@
                             <p class="card-text">
                                 {{ $post->post_text }}.
                             </p>
-                            <a class="btn btn-primary" href="#!">Read more →</a>
+                            <a class="btn btn-primary" href="{{route('postShow',$post->id)  }}">Read more →</a>
                         </div>
                     </div>
                 </div>
