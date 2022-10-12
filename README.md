@@ -36,7 +36,7 @@
     1. `$posts = Post::orderBy(’id’, ‘desc’);` here it sort the post by id in desc order
     2. `$posts = Post::latest()->**get**();`  here it gets the lasted 
     3. `return view(’index’,[’categories’ ⇒ $allCategories, 'posts'=> $posts]);`
-- When can have an array  with the same keys and values
+- When it have an array  with the same name for both key and value use compact
 - `key => value`  **use a method called compact()  so the following will work**
     1. `return view(’index’, [’categories’ ⇒ $categories, 'posts'=> $posts]);` so this 
     2. `return view(’index’, **compact**('categories' , 'posts' );` becomes this
